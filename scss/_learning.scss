@@ -1,0 +1,269 @@
+.learning {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+
+    @media (max-width:$breakpoint1450) {
+        margin-bottom: 50px;
+    }
+    @media (max-width:$breakpoint768) {
+    }
+    @media (max-width:$breakpoint480) {
+        padding-bottom: 0px;
+        margin-top: -30px;
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    &-title {
+        z-index: 2;
+        font-size: calc(20px + 44 * (100vw / 1200));
+        font-weight: bold;
+        line-height: 38px;
+        text-align: center;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+    &-tabs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &-tabs-content {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+
+        &::before {
+            z-index: 1;
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgb(154, 255, 2), transparent);
+            -webkit-filter: blur(60px);
+            opacity: 0.7;
+        }
+
+    }
+
+    &-tabs-item {
+        z-index: 2;
+        display: none;
+    
+
+        &.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-tabs-image {
+        transition: all 0.3s ease;
+        max-width: 100%;
+    }
+
+    &-tabs-nav {
+        z-index: 3;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 0;
+    
+    }
+    .swiper-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        overflow-x: hidden;
+
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .swiper-button-next,.swiper-button-prev {
+        color: rgb(162, 243, 0);
+    }
+
+    &-tabs-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #22212b;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: calc(170px + 150 * (100vw / 1200));
+        height: calc(100px + 50 * (100vw / 1200));
+        gap: 8px;
+        transition: all 0.3s ease;
+
+        &.active {
+            background-color: #ffffff;
+            outline: 0.5px solid $neutral;
+            transition: all 0.5s ease;
+        }
+        &.active > p{
+            color: black;
+            transition: all 0.5s ease;
+        }
+
+    }
+
+
+
+    &-tab-title {
+        padding-left: 10px;
+        width: 100%;
+        color: white;
+        font-size: calc(16px + 8 * (100vw / 1200));
+        font-weight: bold;
+        text-align: start;
+
+        @media (max-width:$breakpoint480) {
+            font-size: calc((14px + 6 * (100vw /1200)));
+        }
+    }
+
+    &-tab-desc {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+        gap: 15px;
+    }
+
+    &-tab-count {
+        padding: 8px 13px;
+        background-color: yellow;
+        border-radius: 50%;
+        color: black !important;
+        font-weight: bold;
+        font-size: calc(10px + 10 * (100vw / 1200));
+    }
+
+    &-tab-subtitle {
+        align-self: flex-start;
+        font-size: calc(8px + 6 * (100vw / 1200));
+        color: $sub;
+        
+        @media (max-width:$breakpoint768) {
+            font-size: calc((8px + 6 * (100vw /1200)));
+        }
+    }
+
+    @media (max-width: $breakpoint992) {
+        &-container {}
+
+        &-title {
+            margin-top: 120px;
+        }
+
+        &-tabs {}
+
+        &-tabs-content {}
+
+        &-tabs-item {}
+
+        &-tabs-image {}
+
+        &-tabs-nav {}
+
+        &-tabs-btn {}
+
+        &-tab-title {}
+
+        &-tab-desc {}
+
+        &-tab-count {}
+
+        &-tab-subtitle {}
+    }
+
+    @media (max-width: $breakpoint768) {
+        &-container {}
+
+        &-title {
+        }
+
+        &-tabs {}
+
+        &-tabs-content {}
+
+        &-tabs-item {}
+
+        &-tabs-image {}
+
+        &-tabs-nav {}
+
+        &-tabs-btn {}
+
+        &-tab-title {}
+
+        &-tab-desc {}
+
+        &-tab-count {}
+
+        &-tab-subtitle {}
+    }
+
+    @media (max-width: $breakpoint480) {
+        &-container {}
+
+        &-title {}
+
+        &-tabs {}
+
+        &-tabs-content {}
+
+        &-tabs-item {}
+
+        &-tabs-image {}
+
+        &-tabs-nav {}
+
+        &-tabs-btn {}
+
+        &-tab-title {}
+
+        &-tab-desc {}
+
+        &-tab-count {}
+
+        &-tab-subtitle {}
+    }
+
+}

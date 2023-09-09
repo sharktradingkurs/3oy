@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark trading</title>
+
+    <!-- #STYLE -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- #FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- SLIDER SWIPPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="scss/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- section HEADER  -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/image/logo.png" alt="">
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-products">
+                    <li class="nav-products-item"><a href="" class="nav-products-link">Все курсы</a></li>
+                    <li class="nav-products-item"><a href="" class="nav-products-link">Pейтинг учеников</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="tel:+998781132603" class="nav-link">
+                            <i class="nav-icon fa-solid fa-phone fa-xl call-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://instagram.com/sharktrading.uz" class="nav-link">
+                            <i class="nav-icon fa-brands fa-instagram fa-2xl instagram-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://t.me/sharktradingchat" class="nav-link">
+                            <i class="nav-icon fa-brands fa-telegram fa-2xl tg-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index-uz.html" class="nav-link nav-lang">
+                            Uz
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container header-widget">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "US 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Биткоин"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Эфириум"
+                            }
+                        ],
+                            "showSymbolLogo": true,
+                                "colorTheme": "dark",
+                                    "isTransparent": false,
+                                        "displayMode": "adaptive",
+                                            "locale": "ru"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+
+        <!-- TradingView Widget END -->
+
+
+    </header>
+
+    <!-- END HEADER -->
+
+    <!-- section TOP -->
+
+    <section id="top" class="top">
+        <div class="container top-container">
+            <div class="top-left">
+                <div class="top-about">
+                    <p class="top-desc">
+                        <i class="fa-solid fa-users-line  top-icon"></i>
+                        <span>Для всех возрастов</span>
+                    </p>
+                    <p class="top-duration">
+                        <i class="top-icon fa-solid fa-clock"></i>
+                        <span class="top-text">Длительность 3 месяца</span>
+                    </p>
+                </div>
+                <h1 class="top-title">3-месячный курс обучения</h1>
+                <p class="top-subtitle">на рынках форекс, криптовалют и акций.
+                </p>
+                <div class="top-btn-group">
+                    <button class="top-btn top-phone-btn">
+                        <a href="tel:+998781132603">
+                            <span>Позвонить</span>
+                            <i class="nav-icon fa-solid fa-phone fa-xl call-icon"></i>
+                        </a>
+                    </button>
+                    <button class="top-btn top-btn-two">
+                        <a href="#form">
+                            Оставить заявку
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="top-right"> 
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container top-widget">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "dark",
+    "dateRange": "12M",
+    "showChart": true,
+    "locale": "ru",
+    "width": "100%",
+    "height": "100%",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+    "gridLineColor": "rgba(42, 46, 57, 0)",
+    "scaleFontColor": "rgba(134, 137, 147, 1)",
+    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+    "tabs": [
+      {
+        "title": "Индексы",
+        "symbols": [
+          {
+            "s": "FOREXCOM:SPXUSD",
+            "d": "S&P 500"
+          },
+          {
+            "s": "FOREXCOM:NSXUSD",
+            "d": "US 100"
+          },
+          {
+            "s": "FOREXCOM:DJI",
+            "d": "Dow 30"
+          },
+          {
+            "s": "INDEX:NKY",
+            "d": "Nikkei 225"
+          },
+          {
+            "s": "INDEX:DEU40",
+            "d": "DAX Index"
+          },
+          {
+            "s": "FOREXCOM:UKXGBP",
+            "d": "UK 100"
+          }
+        ],
+        "originalTitle": "Indices"
+      },
+      {
+        "title": "Форекс",
+        "symbols": [
+          {
+            "s": "FX:EURUSD",
+            "d": "EUR to USD"
+          },
+          {
+            "s": "FX:GBPUSD",
+            "d": "GBP to USD"
+          },
+          {
+            "s": "FX:USDJPY",
+            "d": "USD to JPY"
+          },
+          {
+            "s": "FX:USDCHF",
+            "d": "USD to CHF"
+          },
+          {
+            "s": "FX:AUDUSD",
+            "d": "AUD to USD"
+          },
+          {
+            "s": "FX:USDCAD",
+            "d": "USD to CAD"
+          }
+        ],
+        "originalTitle": "Forex"
+      },
+      {
+        "title": "Криптовалюты",
+        "symbols": [
+          {
+            "s": "BINANCE:BTCUSDT"
+          },
+          {
+            "s": "BINANCE:ETHUSDT"
+          },
+          {
+            "s": "BINANCE:SOLUSDT"
+          },
+          {
+            "s": "BINANCE:XRPUSDT"
+          },
+          {
+            "s": "BINANCE:DOGEUSDT"
+          }
+        ]
+      }
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container top-widget-sub">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                            {
+                                "symbol": "FX:EURUSD",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "ru",
+                                "dateRange": "12M",
+                                "colorTheme": "dark",
+                                "isTransparent": false,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                        </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <!-- END SECTION TOP -->
+
+    <!-- START MAIN -->
+
+    <main class="main">
+
+        <!-- SECTION AUDITORIUM -->
+
+        <section id="auditorium" class="auditorium">
+            <div class="container auditorium-container">
+                <h1 class="auditorium-tite">Для кого этот курс</h1>
+                <div class="auditorium-content">
+                    <div class="auditorium-box">
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-person-arrow-up-from-line"></p>
+                            <p class="role-text">Для всех желающих измемнить свою жизнь.</p>
+                        </div>
+                        <p class="auditorium-desc">Те, кто стремится к лучшему, кто хочет добиться результата и поменять
+                            свой образ жизни, свою жизнь.</p>
+                    </div>
+                    <div class="auditorium-box">
+
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-person-digging"></p>
+                            <p class="role-text">Для тех, кто готов работать упорно.</p>
+                        </div>
+                        <p class="auditorium-desc">Те, кто любит усердно учится и упорно трудится. 50% от нас, 50% от
+                            вас.</p>
+                    </div>
+                    <div class="auditorium-box">
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-people-group"></p>
+                            <p class="role-text">От 11 лет, до 70лет.</p>
+                        </div>
+                        <p class="auditorium-desc">Возраст не имеет значения, главное способность учится и работать над
+                            полученными знаниями.</p>
+                    </div>
+                    <div class="auditorium-box">
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-desktop"></p>
+                            <p class="role-text">Для тех, кто умеет работать на компьютере.</p>
+                        </div>
+                        <p class="auditorium-desc">Без умения работать на компьютере, освоить знания по трейдингу не
+                            возможно.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END SECTION AUDITORIUM -->
+
+        <!-- SECTION LEARNING -->
+
+        <section id="learning" class="learning">
+            <div class="container learning-container">
+                <h1 class="learning-title">Формат обучения</h1>
+                <div class="learning-tabs">
+                    <div class="learning-tabs-content">
+                        <div class="learning-tabs-item tab show" id="tab_1">
+                            <img class="learning-tabs-image" src="assets/image/ipad_2.png" alt="s">
+                        </div>
+                        <div class="learning-tabs-item tab " id="tab_2">
+                            <img class="learning-tabs-image " src="assets/image/ipad_3.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_3">
+                            <img class="learning-tabs-image" src="assets/image/ipad_1.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_4">
+                            <img class="learning-tabs-image" src="assets/image/ipad_4.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_5">
+                            <img class="learning-tabs-image" src="assets/image/ipad_5.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_6">
+                            <img class="learning-tabs-image" src="assets/image/ipad_6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="learning-tabs-nav">
+                        <div class="learning-tabs-swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn active" data-tab="#tab_1">
+                                        <p class="learning-tab-title">Учебные комнаты</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">1</p>
+                                            <p class="learning-tab-subtitle">Наши учебные комнаты оснащены комфортными партами и стульями, большими планшетами и креативными дизайнами.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn " data-tab="#tab_2">
+                                        <p class="learning-tab-title">Комфорт для учёбы</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">2</p>
+                                            <p class="learning-tab-subtitle">Чистота, хорошее освещение и прохладная комната залог эффективного обучения.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_3">
+                                        <p class="learning-tab-title">Конференц залы</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">3</p>
+                                            <p class="learning-tab-subtitle">Помимо учебных занятий, для всех учеников мы часто организуем собрания для вопросов и ответов, мотивирующие и развивающие тренинги и так далее.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn " data-tab="#tab_4">
+                                        <p class="learning-tab-title">Трейдинг комнаты</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">4</p>
+                                            <p class="learning-tab-subtitle">В свободное от учёбы время, вы всегда можете практиковаться в трейдинг комнатах с нашей командой.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_5">
+                                        <p class="learning-tab-title">Релакс зоны</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">5</p>
+                                            <p class="learning-tab-subtitle">Помимо учёбы и практики, мы рекомендуем иногда расслабиться, разгрузить мозг в наших релакс зонах.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_6">
+                                        <p class="learning-tab-title">Комнаты для чтения</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">6</p>
+                                            <p class="learning-tab-subtitle">Мы не только подготавливаем трейдеров, но и всесторонне развитых профессионалов. У нас большое количество развивающей литературы .</p>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-button-next"></div> -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- END SECTION LEARNING -->
+
+
+        <!-- SECTION TRAINING  -->
+
+        <section id="training" class="training">
+            <div class="container training-container">
+                <h1 class="training-title">Программа обучения</h1>
+                <div class="training-accardions">
+                    <div class="training-content-item" onclick="toggleAccordion(this)">
+                        <div class="training-accordion-header">
+                            <span class="training-accordion-count">1</span>
+                            <span class="training-accordion-title">Знакомство с рынком</span>
+                        </div>
+                        <div class="training-accordion-content">
+                            <ul class="training-content-lessons-list">
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">1 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">виды рынков</span>
+                                        <span class="lessons-info-description">Сесии</span>
+                                        <span class="lessons-info-description">Трейдер</span>
+                                        <span class="lessons-info-description">Брокер</span>
+                                        <span class="lessons-info-description">Термины</span>
+                                        <span class="lessons-info-description">Кредитное плечо</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">2 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Лот</span>
+                                        <span class="lessons-info-description">Котировки</span>
+                                        <span class="lessons-info-description">Волатильность</span>
+                                        <span class="lessons-info-description">Свечи и бары</span>
+                                        <span class="lessons-info-description">Знакомство с платформой</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">3 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Знакомство с платформой</span>
+                                        <span class="lessons-info-description">Знакомство с инстурментами</span>
+                                        <span class="lessons-info-description">Валютные
+                                            пары/индексы/сырье</span>
+                                        <span class="lessons-info-description">Разделительный период</span>
+                                        <span class="lessons-info-description">Шаблоны / Screenshot</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">4 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Тренды / виды тренд</span>
+                                        <span class="lessons-info-description">Ордер / виды ордеров</span>
+                                        <span class="lessons-info-description">Повторение пройденных тем</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">5 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Что такое импульс?</span>
+                                        <span class="lessons-info-description">Накопление / виды
+                                            накоплений</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">6 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Уровни</span>
+                                        <span class="lessons-info-description">Откат</span>
+                                        <span class="lessons-info-description">Вертикальный уровень</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">7 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description level">Уровни :</span>
+                                        <span class="lessons-info-description">поддержка</span>
+                                        <span class="lessons-info-description">сопративление</span>
+                                        <span class="lessons-info-description">ретест / виды ретеста</span>
+                                        <span class="lessons-info-description level">Установка тестера</span>
+                                        <span class="lessons-info-description">Открытие / закрытие сделки</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">8 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Лимитный уровень</span>
+                                        <span class="lessons-info-description">Круглая цифра</span>
+                                        <span class="lessons-info-description">Подтверждение уровня / ложный(ЛП)
+                                            и сложный ложный пробой(СЛП)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">9 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Подтверждение /
+                                            сопративление</span>
+                                        <span class="lessons-info-description">Зеркальный ретест</span>
+                                        <span class="lessons-info-description">Закрпление преведущих тем</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">10 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение преведущих тем</span>
+                                        <span class="lessons-info-description">Take profit(TP) Stop
+                                            loss(SL)</span>
+                                        <span class="lessons-info-description">ATR</span>
+                                        <span class="lessons-info-description">Точка входа (TBX)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">11 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Ключевой уровень</span>
+                                        <span class="lessons-info-description">Продолжение тренда</span>
+                                        <span class="lessons-info-description">ATR</span>
+                                        <span class="lessons-info-description">Trend box</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">12 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Знакомство с уроками следующего
+                                            месяца</span>
+                                        <span class="lessons-info-description">Закрепление месяца</span>
+                                        <span class="lessons-info-description">Подведение итогов</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="training-content-item" onclick="toggleAccordion(this)">
+                        <div class="training-accordion-header">
+                            <span class="training-accordion-count">2</span>
+                            <span class="training-accordion-title">Технический анализ</span>
+                        </div>
+                        <div class="training-accordion-content">
+                            <ul class="training-content-lessons-list">
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">13 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Зона продажи / зона
+                                            покупки</span>
+                                        <span class="lessons-info-description">Излом</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">14 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Импульсное движение (МИД /
+                                            БИД)</span>
+                                        <span class="lessons-info-description">ТВХ от зеркального ретеста</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">15 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">RANGE</span>
+                                        <span class="lessons-info-description">Накопление</span>
+                                        <span class="lessons-info-description">Боковой тренд</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">16 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение пройденых тем <br>
+                                            (первых двух недель)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">17 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение пройденых тем <br>
+                                            (третей недели)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">18 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение пройденых тем <br>
+                                            (четвертой и пятой недели)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">19 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Характеристика инстурментов <br>
+                                            (валютные пары - мажор)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">20 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Характеристика инстурментов <br>
+                                            (валютные пары - кросс)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">21 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Характеристика инстурментов <br>
+                                            (индексы и сырье)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">22 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Планировка</span>
+                                        <span class="lessons-info-description">Финансовый план</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">23 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Планировка</span>
+                                        <span class="lessons-info-description">Финансовый план</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">24 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Планировка</span>
+                                        <span class="lessons-info-description">Финансовый план</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="training-content-item" onclick="toggleAccordion(this)">
+                        <div class="training-accordion-header">
+                            <span class="training-accordion-count">3</span>
+                            <span class="training-accordion-title">Практика и live traiding</span>
+                        </div>
+                        <div class="training-accordion-content">
+                            <ul class="training-content-lessons-list">
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">25 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Торговля на H4</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">26 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Возврат цены :</span>
+                                        <span class="lessons-info-description">ложный пробой</span>
+                                        <span class="lessons-info-description">поддержка</span>
+                                        <span class="lessons-info-description">ретест</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">27 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Снятие столпов</span>
+                                        <span class="lessons-info-description">Ловушка</span>
+                                        <span class="lessons-info-description">Сила</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">28 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Разгон депозита</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">29 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">30 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Признаки разворота</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">31 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">32 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">33 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">34 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">35 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">36 урок</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- END TRAINING SECTION -->
+
+
+        <!-- SECTION AUTHOR -->
+
+        <section id="author" class="author">
+            <div class="container author.container">
+                <h1 class="author-title">Автор курса и основатель школы</h1>
+                <div class="author-block">
+                    <div class="author-left">
+                        <div class="author-photo"></div>
+                        <img class="author-img" src="assets/image/author_photo.png" alt="Umidjon rizikov">
+                    </div>
+                    <div class="author-right">
+                        <h1 class="author-name">Умиджон Разиков</h1>
+                        <p class="author-about">
+                            Разиков Умиджон Убайдуллаевич родился в 1990 году 13 октябр.
+                            C 2008 года он стал искать себя в новых сферах деятельности. Тогда он и познакомился с
+                            рынком Форекс.
+                            <br>
+                            <br>
+                            Совмещая другие виды деятельности с торговлей на рынке Форекс и криптовалют, он с 2016-года
+                            оставив всё, стал профессионально заниматься трейдингом. А уже в 2017 году основал школу
+                            трейдеров – «Shark Trading». В 2021 году у него обучились более 60 учеников, и их
+                            результативность на рынке Форекс составляла 90%.
+                            <br>
+                            <br>
+                            Сейчас Умиджон Разиков славится своими успехами в таких сферах как:
+                            1. Бизнес в сфере Клининга.
+                            2. Бизнес в сфере обучение на финансовых рынках в офлайн режиме.
+                            3. Управляющий трейдер со стабильным доходом для своих инвесторов.
+                            <br>
+                            <br>
+                            Умиджон также спонсирует детей из малоимущих семей. Организовал идею помочь нуждающимся и
+                            выделяет деньги для их учебы.
+                        </p>
+                        <p class="author-sig">- У. Разиков</p>
+                        <p class="author-copyright">
+                            Является одним из самых лучших учеников С.М.Давлатова, известного бизнес-тренера,
+                            бизнесмена, доктора психологических наук, основателя и президента Международного центра
+                            развития человека «САМО».
+                            <br>
+                            <span class="author-copyright-label">
+                                С 2021 года является идеологом и учеником С.М.Давлатова.
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END AUTHOR SECTION -->
+
+        <!-- SECTION RESULT  -->
+
+        <div id="result" class="result">
+            <div class="container result-container">
+                <h1 class="result-title">Результат Курса</h1>
+                <div class="result-block">
+                    <div class="result-box">
+                        <p class="result-count">1</p>
+                        <p class="result-progress">Теория</p>
+                        <p class="result-description">В течении первого месяца вы освоите теорию и навыки торговли.</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-count">2</p>
+                        <p class="result-progress">Практика</p>
+                        <p class="result-description">Второй месяц будет проходить практические занятия познание азов
+                            торговли на площадке.</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-count">3</p>
+                        <p class="result-progress">Торговля инвестициями</p>
+                        <p class="result-description">Третий месяц будем торговать тестовые периоды для получения
+                            инвестиций </p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-count">4</p>
+                        <p class="result-progress">Реальная торговля</p>
+                        <p class="result-description">Начиная с четвертого месяца вы будете зарабатывать торгуя
+                            инвестиционным счётом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  END SECTION RESULT  -->
+
+
+        <!-- SECTION questions -->
+        <section id="questions" class="questions">
+            <div class="container questions-container">
+                <h1 class="questions-title">Часто задаваемые вопросы</h1>
+                <div class="questions-block">
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">1</span>
+                            <span class="questions-accordion-title accordion-title">Вопросы по учёбе</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Чему обучают на курсе?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Принципы и правила двигателей рынка, то есть законы спроса и предложения. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Кто будет нас обучать?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Ответ Опытные кураторы, которые учились у Умиджона Разикова
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Даем ли мы гарантию на результат?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    К результату приводит упорный труд. Мы передаем знания, делимся практикой. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли результат работы куратора?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Да, без этого никак.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Почему Умиджон Разыков не проходит занятие?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Умиджон Разыков не может приходить на все занятия, но часто организует мастер классы, собрания и конференции. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько раз занятие в неделю?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    3 раза в неделю
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Дадут ли сертификат после окончания курса?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Нет, Вашим сертификатом будет торговый счёт, который Вы будете управлять и зарабатывать с него. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли сертификат у куратора?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Сертифицированный куратор не означает что профессионал в своём деле. Сертификат или диплом в наше время можно приобрести где угодно. Но результат не приобретается, а достигается. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Где обучался торговли Умиджон Разыков?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В одной группе один куратор. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько кураторов в группе?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В одной группе один куратор. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли индивидуальные занятия?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Пока что нет. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Когда будет торговля на реальном счёте?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Сразу после освоения теорий и практики. На последнем месяце обучения. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли онлайн курсы?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В процессе записи. Мы хотим чтобы онлайн курсы также были эффективными как и курсы в живую. Чтобы у обучающихся были все ответы на потенциально возникающие вопросы.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Когда будет онлайн курсы?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В сентябре текущего года (2023).
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        На каком языке обучают?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    И на Узбекском, и на Русском. 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">2</span>
+                            <span class="questions-accordion-title accordion-title">Вопросы по срокам и
+                                результатам</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько длится обучение?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    3 месяца включающие в себя теорию, практику и реальную торговлю вместе с кураторами
+                                    и в команде.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Через какой период будет результат?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    К концу обучения у Вас уже будут результаты при условии что Вы будете стараться и
+                                    заниматься усердно.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Трехмесячный курс по результативности также, как и годовой?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Да, абсолютно такой же. Разница между трёх месячной и годовой в том, что в годовом
+                                    курсе помимо рынка Forex, обучаются и рынок акций, криптовалют.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Будет ли результат через 3 месяца?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Обязательно будет если упорно трудиться и учиться. Ведь если достаточно приложить
+                                    усилия, то и в космос можно улететь ;) что-ж в трейдинге не преуспеть?
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Почему нету 1 месячного курса?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Потому что мы не только обучаем, но и сопровождаем с практикой и реальной торговлей.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">3</span>
+                            <span class="questions-accordion-title accordion-title">Вопросы по оплате</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько стоит курс?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Стоимость обучения за весь период составляет - 2000$
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Почему так дорого?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Учитывая ценность, полезность и эффективность информации, и окупаемость полученных
+                                    знаний, и потенциал заработков, поверьте нам, это совсем не дорого.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли оплачивать курс помесячно (в рассрочку)?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Да можно. Можно оплачивать каждый месяц ⅓ части стоимости обучения (по 500$
+                                    ежемесячно).
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли оплатить курс после обучения?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    К сожалению из-за горьких опытов (из-за отношений учеников к нам и к знаниям
+                                    которыми мы с ними поделились), нельзя.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли обучиться бесплатно?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Набор учеников на бесплатное (т.е. оплата обучения от прибыли после курса) обучение
+                                    уже закончился. Набралось больше учеников чем планировали (больше 300).
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">4</span>
+                            <span class="questions-accordion-title accordion-title">Прочие вопросы</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Минимальный депозит для торговли?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Мы рекомендуем не торговать на свои деньги. Начните с демо счёта. Когда вы будете
+                                    уверены в своих навыках, Вы можете за 100-500$ вязть в управление инвестиции от
+                                    10.000$ до 100.000$
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли после курса работать у вас куратором?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Если после курсов Вы захотите делиться с Вашим опытом с последующими учениками, мы
+                                    будет только рады принять Вас в нашу семью!
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Интересно но сомневаюсь?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Вам нужно определиться в чем именно заключается Ваше сомнение. Если Вы не уверены
+                                    что справитесь, или что это не Ваше, вступать в сферу трейдинга или нет, решать
+                                    только Вам.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Принимаете ли вы инвестиции?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    По вопросам инвестиций Вам нужно записаться на прием к нашему руководящему трейдеру,
+                                    основателю школы “SharkTrading” Умиджону разыкову.
+                                    Как можно связатся с Умиджоном Разыковым?
+                                    Через запись по номеру телефону +998781132603
+                                    В каких городах есть филиалы?
+                                    Школы “SharkTrading” обучают трейдингу в трёх городах - в Ташкент, в Самарканде и в
+                                    Бухаре.
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END QUESTIONS -->
+
+        <!-- SECTION CALLBACK -->
+
+        <section class="callback">
+            <div class="container callback-container">
+                <h1 class="callback-title">Стоимость и формы оплаты</h1>
+                <div class="callback-block">
+                    <div class="callback-left">
+                        <div class="callback-option">
+                            <div class="callback-option-top">
+                                <div class="callback-option-titels">
+                                    <h2 class="callback-option-subtitle">3 месяца</h2>
+                                    <h2 class="callback-option-title">Торговля на рынке форекс. <br> 3 месячный курс
+                                    </h2>
+                                </div>
+                            </div>
+                            <ul class="callback-list">
+                                <li class="callback-list-item">
+                                    Форма оплаты любая
+                                </li>
+
+                            </ul>
+                            <p class="callback-current">
+                                <span class="callback-current-price">2000$ - полная стоимость</span>
+                                <span class="callback-price-per-month">
+                                    или в рассрочку до 3, 6 или 12 месяцев.
+                                </span>
+                            </p>
+
+                            <div class="callback-btn-group">
+                                <a href="https://t.me/sharktradingchat" class="callback-btn callback-telegram">
+                                    <span>Написать в телеграмм</span>
+                                    <i class="fa-brands fa-telegram fa-2xl telegram-icon"></i>
+                                </a>
+                                <a href="tel:+998781132603" class="callback-btn callback-call">
+                                    <span>Позвонить</span>
+                                    <i class="fa-solid fa-phone fa-xl phone-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="callback-right">
+                        <form id="form" class="callback-form">
+                            <div id="success" class="callback-alert alert alert-success" role="alert">Заявка отправлена
+                            </div>
+                            <h1 class="callback-form-title">Введите ваши данные
+                                для связи c вами</h1>
+                            <input class="callback-input _req _name" name="name" placeholder="Имя" type="text">
+                            <input class="callback-input _req _email " name="email" placeholder="email" type="email">
+                            <input class="callback-input _req _tel" name="tel" placeholder="+998" type="tel">
+                            <button type="submit" class="callback-form-btn btn">
+                                Оставить Заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END CALLBACK -->
+
+
+
+    </main>
+
+
+    <!-- END MAIN -->
+
+
+    <!-- SECTION FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="assets/image/logo.png" alt="shark trading">
+                </div>
+                <p class="footer-left-text">
+                    <span>Адрес: г. Ташкент улица Фурката 18 блок 3 дом ориентир: Беньков колледж </span>
+                    <span>Адрес: г. Самарканд улица Рудакий 206 Ориентир: Банк коллеж</span>
+                    <span>Адрес: г. Бухара улица Фатхобод Ориентир: Чевар</span>
+                </p>
+                <ul class="footer-social-list">
+                    <li class="footer-list-item">
+                        <a href="tel:+998781132603" class="footer-list-link">
+                            <i class="fa-solid fa-phone fa-xl phone-icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://instagram.com/sharktrading.uz" class="footer-list-link">
+                            <i class="fa-brands fa-instagram fa-2xl instagram-icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://t.me/sharktradingchat" class="footer-list-link">
+                            <i class="fa-brands fa-telegram fa-2xl telegram-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-first">
+                    <p>Наши продукты</p>
+                    <ul class="footer-right-list-first">
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Все курсы</a></li>
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Новости школы</a></li>
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Pейтинг учеников</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right-end">
+                    <p>Содержание страницы</p>
+                    <ul class="footer-right-list-end">
+                        <li class="footer-right-item"><a href="#top" class="footer-right-list-link">Главная</a></li>
+                        <li class="footer-right-item"><a href="#auditorium" class="footer-right-list-link">Кому подойдёт курс</a>
+                        </li>
+                        <li class="footer-right-item"><a href="#learning" class="footer-right-list-link">Формат обучения</a></li>
+                        <li class="footer-right-item"><a href="#training" class="footer-right-list-link">Программа обучения</a>  </li>
+                        <li class="footer-right-item"><a href="#author" class="footer-right-list-link">Автор курса и основатель школы</a></li>
+                        <li class="footer-right-item"><a href="#result" class="footer-right-list-link">Результат Курса</a></li>
+                        <li class="footer-right-item"><a href="#questions" class="footer-right-list-link">Часто задаваемые вопросы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="js/main.js"> </script>
+
+
+
+</body>
+
+</html>

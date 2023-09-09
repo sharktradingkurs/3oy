@@ -1,0 +1,225 @@
+.auditorium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px !important;
+    width: 100%;
+    min-height: 80vh;
+    margin: 0 auto;
+
+    @media (max-height:380px) {
+        margin-top: 300px !important;
+    }
+
+    @media (max-width:1600px) {
+        margin-bottom: 20px;
+    }
+
+    &-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (max-height:569px) {
+        }
+
+        @media (max-height:450px) {
+        }
+
+    }
+
+    &-tite {
+        font-size: calc(20px + 44 * (100vw / 1200));
+        font-weight: bold;
+        line-height: 38px;
+        text-align: center;
+        color: white;
+        padding-bottom: 80px;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &-box {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 12px;
+        border-radius: 15px;
+        background-color: #22212b;
+        padding: 20px 25px;
+        width: 45%;
+        height: 180px;
+
+        @media (max-width:$breakpoint1450) {
+            padding: 20px 30;
+        }
+
+        @media (max-width:1400px) {
+            height: 215px;
+        }
+
+
+    }
+
+    &-role-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 8px 8px;
+        margin-right: 10px;
+        font-size: calc(15px + 10 * (100vw / 1200));
+        color: black;
+        text-align: center;
+        background-color: $neutral;
+
+        @media (max-width: 1500px) {
+            margin-top: 20px;
+        }
+        @media (max-width:$breakpoint480) {
+        padding: 10px 10px !important;
+        }
+
+    }
+
+    &-role {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        color: white;
+
+
+    }
+
+    .role-text {
+        font-size: calc(16px + 6 * (100vw / 1200));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        @media (max-width:100vw) {
+            margin-top: 0px;
+        }
+    }
+
+    &-desc {
+        font-size: calc(10px + 8 * (100vw / 1200));
+        color: $sub;
+    }
+
+    @media (max-width: $breakpoint992) {
+        &-container {}
+
+        &-tite {}
+
+        &-content {}
+
+        &-box {
+            height: 220px;
+            gap: 8px;
+        }
+
+        &-role-icon {}
+
+        &-role {
+            margin-top: -20px;
+        }
+
+        &-desc {}
+
+    }
+
+    @media (max-width: $breakpoint768) {
+        &-container {}
+
+        &-tite {
+            padding-bottom: 30px;
+        }
+
+        &-content {}
+
+        &-box {
+            width: 100%;
+            gap: 0px;
+        }
+
+        &-role-icon {}
+
+        &-role {
+            font-size: calc(16px + 8 * (100vw / 1200));
+        }
+
+        &-desc {
+            font-size: calc(14px + 8 * (100vw / 1200));
+        }
+    }
+
+    @media (max-width: $breakpoint480) {
+        &-container {}
+
+        &-tite {
+            margin-top: 50px;
+        }
+
+        &-content {}
+
+        &-box {
+            height: 160px;
+            justify-content: space-around;
+            padding: 0px 10px;
+        }
+
+        &-role-icon {
+            padding: 24px 15px;
+        }
+
+        &-role {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        &-desc {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width:$breakpoing325) {
+        &-container {}
+
+        &-tite {}
+
+        &-content {}
+
+        &-box {
+            padding: 10px 10px;
+        }
+
+        &-role-icon {
+            margin-top: -10px;
+            padding: 24px 18px;
+        }
+
+        &-role {
+            font-size: 24px;
+        }
+
+        &-desc {
+            font-size: 14px;
+        }
+    }
+}

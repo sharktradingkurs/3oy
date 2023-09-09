@@ -1,0 +1,241 @@
+.top { 
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    margin: 0 auto;
+
+
+
+    &-container {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    &-left {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 50%;
+        height: 70vh;
+
+
+
+        @media (max-height:569px) {
+            min-height: 70vh;
+        }
+    
+
+    }
+
+    &-about {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: white;
+        gap: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px;
+        background-color: #413f4d;
+        border-radius: 20px;
+        font-size: calc(8px + 4 * (100vw / 1200));
+    }
+
+    &-duration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px;
+        background-color: #413f4d;
+        border-radius: 20px;
+        font-size: calc(8px + 4 * (100vw / 1200));
+    }
+
+    &-icon {
+        padding-right: 5px;
+        color: $neutral;
+    }
+
+    &-text {}
+
+    &-title {
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        font-size: calc(34px + 34 * (100vw / 1200));
+
+    }
+
+    &-subtitle {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        font-size: calc(12px + 10 * (100vw / 1200));
+        color: silver;
+    }
+
+    &-btn-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &-btn {
+        width: 40%;
+        height: 50px;
+        background-color: #54ef6c;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: calc(12px + 4 * (100vw / 1200));
+        outline: none;
+        border: none;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: transparent;
+            transition: 0.2s ease;
+            color: white;
+            border: 1px solid lightcyan;
+        }
+    }
+
+    &-btn-two {
+        background-color: yellow;
+        font-weight: bold;
+
+        &:hover {
+            
+            & a {
+                color: white !important;
+            }
+        }
+
+        & a {
+            color: black !important;
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 65vh;
+
+        @media (max-width:$breakpoint768) {
+            width: 100%;
+            height: auto !important;
+        }
+    }
+
+    &-widget {
+        @media (max-width:$breakpoint768) {
+            display: none;
+        }
+        
+    }
+    &-widget-sub {
+        display: none;
+        @media (max-width:$breakpoint768) {
+            display: flex;
+        }
+    }
+
+
+
+
+    @media (max-width: $breakpoint992) {
+        &-about {
+            width: 100%;
+        }
+        &-desc {
+            width: 60%;
+        }
+        &-duration {
+            width: 40%;
+        }
+    }
+    @media (max-width:$breakpoint768) {
+
+        margin-top: 30px;
+
+        &-container {
+            justify-content: space-between;
+        }
+
+        &-left {
+            gap: 30px;
+            width: 100%;
+            height: 40vh;
+            text-align: start;
+        }
+
+        &-subtitle {
+            text-align: start !important;
+            font-size: calc(10px + 5 * (100vw / 1200));
+        }
+
+        &-about {
+            justify-content: flex-start;
+        }
+        &-desc {
+            width: 40%;
+            height: 25px;
+        }
+        &-duration {
+            width: 40%;
+            height: 25px;
+        }
+
+        &-btn-group {
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        &-phone-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &-right {
+            width: 100%;
+            height: 100%;
+        }
+     
+        &-container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+    @media (max-width: $breakpoint480) {
+
+    
+        &-desc {
+            font-size: 11px;
+        }
+    }
+
+}
+

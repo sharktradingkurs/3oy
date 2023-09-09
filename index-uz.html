@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Shark trading" maktabi</title>
+
+    <!-- #STYLE -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- #FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- SLIDER SWIPPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="scss/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- section HEADER  -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/image/logo.png" alt="">
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-products">
+                    <li class="nav-products-item"><a href="" class="nav-products-link">Barcha kurslar</a></li>
+                    <li class="nav-products-item"><a href="" class="nav-products-link">O'quvchilar reytingi</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="tel:+998781132603" class="nav-link">
+                            <i class="nav-icon fa-solid fa-phone fa-xl call-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://instagram.com/sharktrading.uz" class="nav-link">
+                            <i class="nav-icon fa-brands fa-instagram fa-2xl instagram-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://t.me/sharktradingchat" class="nav-link">
+                            <i class="nav-icon fa-brands fa-telegram fa-2xl tg-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link nav-lang">
+                            Ru
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container header-widget">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "US 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Биткоин"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Эфириум"
+                            }
+                        ],
+                            "showSymbolLogo": true,
+                                "colorTheme": "dark",
+                                    "isTransparent": false,
+                                        "displayMode": "adaptive",
+                                            "locale": "ru"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+
+        <!-- TradingView Widget END -->
+
+
+    </header>
+
+    <!-- END HEADER -->
+
+    <!-- section TOP -->
+
+    <section id="top" class="top">
+        <div class="container top-container">
+            <div class="top-left">
+                <div class="top-about">
+                    <p class="top-desc">
+                        <i class="fa-solid fa-users-line  top-icon"></i>
+                        <span>Barcha yoshdagilar uchun</span>
+                    </p>
+                    <p class="top-duration">
+                        <i class="top-icon fa-solid fa-clock"></i>
+                        <span class="top-text">3 oylik kurs</span>
+                    </p>
+                </div>
+                <h1 class="top-title">3 oylik <br> treyding kursi</h1>
+                <p class="top-subtitle">forex bozorida professional savdo qilish 
+                </p>
+                <div class="top-btn-group">
+                    <button class="top-btn top-phone-btn">
+                        <a href="tel:+998781132603">
+                            <span>Qo'ng'iroq qilish</span>
+                            <i class="nav-icon fa-solid fa-phone fa-xl call-icon"></i>
+                        </a>
+                    </button>
+                    <button class="top-btn top-btn-two">
+                        <a href="#form">
+                            Ariza qoldirish
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="top-right"> 
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container top-widget">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "dark",
+    "dateRange": "12M",
+    "showChart": true,
+    "locale": "ru",
+    "width": "100%",
+    "height": "100%",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+    "gridLineColor": "rgba(42, 46, 57, 0)",
+    "scaleFontColor": "rgba(134, 137, 147, 1)",
+    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+    "tabs": [
+      {
+        "title": "Indekslar",
+        "symbols": [
+          {
+            "s": "FOREXCOM:SPXUSD",
+            "d": "S&P 500"
+          },
+          {
+            "s": "FOREXCOM:NSXUSD",
+            "d": "US 100"
+          },
+          {
+            "s": "FOREXCOM:DJI",
+            "d": "Dow 30"
+          },
+          {
+            "s": "INDEX:NKY",
+            "d": "Nikkei 225"
+          },
+          {
+            "s": "INDEX:DEU40",
+            "d": "DAX Index"
+          },
+          {
+            "s": "FOREXCOM:UKXGBP",
+            "d": "UK 100"
+          }
+        ],
+        "originalTitle": "Indices"
+      },
+      {
+        "title": "Forex",
+        "symbols": [
+          {
+            "s": "FX:EURUSD",
+            "d": "EUR to USD"
+          },
+          {
+            "s": "FX:GBPUSD",
+            "d": "GBP to USD"
+          },
+          {
+            "s": "FX:USDJPY",
+            "d": "USD to JPY"
+          },
+          {
+            "s": "FX:USDCHF",
+            "d": "USD to CHF"
+          },
+          {
+            "s": "FX:AUDUSD",
+            "d": "AUD to USD"
+          },
+          {
+            "s": "FX:USDCAD",
+            "d": "USD to CAD"
+          }
+        ],
+        "originalTitle": "Forex"
+      },
+      {
+        "title": "Kriptovalyutalar",
+        "symbols": [
+          {
+            "s": "BINANCE:BTCUSDT"
+          },
+          {
+            "s": "BINANCE:ETHUSDT"
+          },
+          {
+            "s": "BINANCE:SOLUSDT"
+          },
+          {
+            "s": "BINANCE:XRPUSDT"
+          },
+          {
+            "s": "BINANCE:DOGEUSDT"
+          }
+        ]
+      }
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container top-widget-sub">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                            {
+                                "symbol": "FX:EURUSD",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "ru",
+                                "dateRange": "12M",
+                                "colorTheme": "dark",
+                                "isTransparent": false,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                        </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </section>
+
+    <!-- END SECTION TOP -->
+
+    <!-- START MAIN -->
+
+    <main class="main">
+
+        <!-- SECTION AUDITORIUM -->
+
+        <section id="auditorium" class="auditorium">
+            <div class="container auditorium-container">
+                <h1 class="auditorium-tite">Kim uchun bu kurs</h1>
+                <div class="auditorium-content">
+                    <div class="auditorium-box">
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-person-arrow-up-from-line"></p>
+                            <p class="role-text">O'z hayotini o'zgartirmoqchi bo'lganlar uchun.</p>
+                        </div>
+                        <p class="auditorium-desc">O'sish niyatida bo'lganlar, natijaga erishmoqchi va o'z hayot tarzini o'zgartirmoqchi bo'lganlar uchun.</p>
+                    </div>
+                    <div class="auditorium-box">
+
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-person-digging"></p>
+                            <p class="role-text">Tinimsiz ishlashga tayyor bo'lganlar uchun.</p>
+                        </div>
+                        <p class="auditorium-desc">O'zini ayamasdan o'qishga va harakat qilishga tayyor bo'lganlar uchun. 50% bizdan, qolgan 50% sizdan.</p>
+                    </div>
+                    <div class="auditorium-box">
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-people-group"></p>
+                            <p class="role-text">11 yoshdan, 70 yoshgacha.</p>
+                        </div>
+                        <p class="auditorium-desc">Yoshni farqi yoq, asosiysi o'rganish va ishlashga qobiliyati va niyati bo'lganlar uchun. </p>
+                    </div>
+                    <div class="auditorium-box">
+                        <div class="auditorium-role">
+                            <p class="auditorium-role-icon fa-solid fa-desktop"></p>
+                            <p class="role-text">Kompyuterda ishlashni biladiganlar uchun.</p>
+                        </div>
+                        <p class="auditorium-desc">Kompyuterda ishlashni bilmasangiz, treydingni o'rganish imkoningiz bo'lmaydi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END SECTION AUDITORIUM -->
+
+        <!-- SECTION LEARNING -->
+
+        <section id="learning" class="learning">
+            <div class="container learning-container">
+                <h1 class="learning-title">Bizning ofislarimiz</h1>
+                <div class="learning-tabs">
+                    <div class="learning-tabs-content">
+                        <div class="learning-tabs-item tab show" id="tab_1">
+                            <img class="learning-tabs-image" src="assets/image/ipad_2.png" alt="s">
+                        </div>
+                        <div class="learning-tabs-item tab " id="tab_2">
+                            <img class="learning-tabs-image " src="assets/image/ipad_3.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_3">
+                            <img class="learning-tabs-image" src="assets/image/ipad_1.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_4">
+                            <img class="learning-tabs-image" src="assets/image/ipad_4.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_5">
+                            <img class="learning-tabs-image" src="assets/image/ipad_5.png" alt="">
+                        </div>
+                        <div class="learning-tabs-item tab" id="tab_6">
+                            <img class="learning-tabs-image" src="assets/image/ipad_6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="learning-tabs-nav">
+                        <div class="learning-tabs-swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn active" data-tab="#tab_1">
+                                        <p class="learning-tab-title">O'quv xonalari</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">1</p>
+                                            <p class="learning-tab-subtitle">O'quv xonalarimiz qulay partalar va stollar bilan, katta planshetlar va boshqacha dizayn bilan jihozlangan.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn " data-tab="#tab_2">
+                                        <p class="learning-tab-title">O'qish uchun qulaylik</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">2</p>
+                                            <p class="learning-tab-subtitle">Tozagina, yaxshi yorug'lik va salqin bilan ta'minlangan xonalarda o'qish yaxshi natija kafolatidir.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_3">
+                                        <p class="learning-tab-title">Konferens xonalar</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">3</p>
+                                            <p class="learning-tab-subtitle">Darslardan tashqari biz konferens zallarimizda tez-tez hamma o'quvchilar uchun yig'ilishlar, savol-javoblar va motivatsion va rivojlantiruvchi treninglar o'tkazib turamiz.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn " data-tab="#tab_4">
+                                        <p class="learning-tab-title">Treyding xonalar</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">4</p>
+                                            <p class="learning-tab-subtitle">Darslardan tashqari bo'sh vaqtlaringizda siz treyding xonalarimizda komandamiz bilan malakangizni oshirishingiz mumkin.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_5">
+                                        <p class="learning-tab-title">Relaks zonalar</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">5</p>
+                                            <p class="learning-tab-subtitle">Darslar va amaliyotlardan tashqari, biz relaks zonalarda miyangizga orom berishingizni maslahat beramiz.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="learning-tabs-btn tab_btn" data-tab="#tab_6">
+                                        <p class="learning-tab-title">O'qish xonalari</p>
+                                        <div class="learning-tab-desc">
+                                            <p class="learning-tab-count">6</p>
+                                            <p class="learning-tab-subtitle">Siz nafaqat professional treyder bo'lib, balki har tomonlama mukammal inson bo'lishingiz tarafdorimiz. Bizning kitob o'qish xonalarimiz foydali kitoblarga juda boy.</p>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-button-next"></div> -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- END SECTION LEARNING -->
+
+
+        <!-- SECTION TRAINING  -->
+
+        <section id="training" class="training">
+            <div class="container training-container">
+                <h1 class="training-title">O'quv darslik rejasi</h1>
+                <div class="training-accardions">
+                    <div class="training-content-item" onclick="toggleAccordion(this)">
+                        <div class="training-accordion-header">
+                            <span class="training-accordion-count">1</span>
+                            <span class="training-accordion-title">Bozor bilan tanishuv</span>
+                        </div>
+                        <div class="training-accordion-content">
+                            <ul class="training-content-lessons-list">
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">1 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Bozor turlari</span>
+                                        <span class="lessons-info-description">Sessiyalar</span>
+                                        <span class="lessons-info-description">Treyder</span>
+                                        <span class="lessons-info-description">Broker</span>
+                                        <span class="lessons-info-description">Terminlar</span>
+                                        <span class="lessons-info-description">Kredit yelkasi</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">2 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Lot</span>
+                                        <span class="lessons-info-description">Kotirovkalar</span>
+                                        <span class="lessons-info-description">Volatilnost</span>
+                                        <span class="lessons-info-description">Svecha va barlar</span>
+                                        <span class="lessons-info-description">Platforma bilan tanishuv</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">3 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Platforma bilan tanishuv</span>
+                                        <span class="lessons-info-description">Instrumentlar bilan tanishuv</span>
+                                        <span class="lessons-info-description">Valyuta paralari/indekslar/xomashyo</span>
+                                        <span class="lessons-info-description">Razdelitelniy period</span>
+                                        <span class="lessons-info-description">Shablonlar / Screenshot</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">4 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Trendlar / turlari</span>
+                                        <span class="lessons-info-description">Order / turlari</span>
+                                        <span class="lessons-info-description">Mavzularni takrorlash</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">5 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Impuls bu nima?</span>
+                                        <span class="lessons-info-description">Nakoplenie / turlari </span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">6 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Urovenlar (darajalar)</span>
+                                        <span class="lessons-info-description">Otkat</span>
+                                        <span class="lessons-info-description">Vertikal uroven</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">7 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description level">Uroven:</span>
+                                        <span class="lessons-info-description">podderjka</span>
+                                        <span class="lessons-info-description">qarshilik</span>
+                                        <span class="lessons-info-description">retest / turlari</span>
+                                        <span class="lessons-info-description level">Tester o'rnatish</span>
+                                        <span class="lessons-info-description">Sdelka ochish / yopish</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">8 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Лимитный уровень</span>
+                                        <span class="lessons-info-description">Круглая цифра</span>
+                                        <span class="lessons-info-description">Подтверждение уровня / ложный(ЛП)
+                                            и сложный ложный пробой(СЛП)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">9 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Подтверждение /
+                                            сопративление</span>
+                                        <span class="lessons-info-description">Зеркальный ретест</span>
+                                        <span class="lessons-info-description">Закрпление преведущих тем</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">10 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение преведущих тем</span>
+                                        <span class="lessons-info-description">Take profit(TP) Stop
+                                            loss(SL)</span>
+                                        <span class="lessons-info-description">ATR</span>
+                                        <span class="lessons-info-description">Точка входа (TBX)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">11 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Ключевой уровень</span>
+                                        <span class="lessons-info-description">Продолжение тренда</span>
+                                        <span class="lessons-info-description">ATR</span>
+                                        <span class="lessons-info-description">Trend box</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-graduation-cap lessons-icon"></i>
+                                    <span class="lessons-count">12 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Знакомство с darsами следующего
+                                            месяца</span>
+                                        <span class="lessons-info-description">Закрепление месяца</span>
+                                        <span class="lessons-info-description">Подведение итогов</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="training-content-item" onclick="toggleAccordion(this)">
+                        <div class="training-accordion-header">
+                            <span class="training-accordion-count">2</span>
+                            <span class="training-accordion-title">Texnik tahlil</span>
+                        </div>
+                        <div class="training-accordion-content">
+                            <ul class="training-content-lessons-list">
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">13 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Зона продажи / зона
+                                            покупки</span>
+                                        <span class="lessons-info-description">Излом</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">14 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Импульсное движение (МИД /
+                                            БИД)</span>
+                                        <span class="lessons-info-description">ТВХ от зеркального ретеста</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">15 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">RANGE</span>
+                                        <span class="lessons-info-description">Накопление</span>
+                                        <span class="lessons-info-description">Боковой тренд</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">16 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение пройденых тем <br>
+                                            (первых двух недель)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">17 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение пройденых тем <br>
+                                            (третей недели)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">18 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Повторение пройденых тем <br>
+                                            (четвертой и пятой недели)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">19 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Характеристика инстурментов <br>
+                                            (валютные пары - мажор)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">20 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Характеристика инстурментов <br>
+                                            (валютные пары - кросс)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">21 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Характеристика инстурментов <br>
+                                            (индексы и сырье)</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">22 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Планировка</span>
+                                        <span class="lessons-info-description">Финансовый план</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">23 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Планировка</span>
+                                        <span class="lessons-info-description">Финансовый план</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-chart-line fa-lg lessons-icon"></i>
+                                    <span class="lessons-count">24 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Планировка</span>
+                                        <span class="lessons-info-description">Финансовый план</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="training-content-item" onclick="toggleAccordion(this)">
+                        <div class="training-accordion-header">
+                            <span class="training-accordion-count">3</span>
+                            <span class="training-accordion-title">Amaliyot va live traiding</span>
+                        </div>
+                        <div class="training-accordion-content">
+                            <ul class="training-content-lessons-list">
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">25 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Торговля на H4</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">26 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Возврат цены :</span>
+                                        <span class="lessons-info-description">ложный пробой</span>
+                                        <span class="lessons-info-description">поддержка</span>
+                                        <span class="lessons-info-description">ретест</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">27 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Снятие столпов</span>
+                                        <span class="lessons-info-description">Ловушка</span>
+                                        <span class="lessons-info-description">Сила</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">28 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Разгон депозита</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">29 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">30 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Признаки разворота</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">31 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">32 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">33 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">34 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">35 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                                <li class="lessons-item">
+                                    <i class="fa-solid fa-magnifying-glass-chart fa-xl lessons-icon"></i>
+                                    <span class="lessons-count">36 dars</span>
+                                    <p class="lessons-info">
+                                        <span class="lessons-info-description">Real - time</span>
+                                        <span class="lessons-info-description">Практика</span>
+                                        <span class="lessons-info-description">Анализ рынка</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- END TRAINING SECTION -->
+
+
+        <!-- SECTION AUTHOR -->
+
+        <section id="author" class="author">
+            <div class="container author.container">
+                <h1 class="author-title">Kurs muallifi va maktab asoschisi</h1>
+                <div class="author-block">
+                    <div class="author-left">
+                        <div class="author-photo"></div>
+                        <img class="author-img" src="assets/image/author_photo.png" alt="Umidjon rizikov">
+                    </div>
+                    <div class="author-right">
+                        <h1 class="author-name">Umidjon Razikov</h1>
+                        <p class="author-about">
+                             Razikov Umidjon Ubaydullaevich 1990-yil 13-oktabrda tug‘ilgan.
+                             2008 yildan boshlab u o'zini yangi faoliyat yo'nalishlarida izlay boshladi va ilk bora Forex bozori bilan tanishdi.
+                             <br>
+                             <br>
+                             2016-yilgacha boshqa faoliyat turlari bilan birga Forex va kripto bozorlarida savdo qilishni birlashtirib kelib, 2016-yildan boshlab, u professional treyderga aylandi va faqat shu faoliyat turida ishlashni davom etdi.
+                             2017 yilda u "Shark Trading" - treyderlar maktabiga asos soldi. 2021-yilda uning 60 dan ortiq talabalari bor edi va ularning orasidan Forex bozorida natija ko'rsatganlari 90% ni tashkil etardi.
+                             <br>
+                             <br>
+                             Hozirda Umidjon Razikov quyidagi sohalardagi muvaffaqiyatlari bilan mashhur:
+                             1. Klining sohasidagi biznesi.
+                             2. Moliyaviy bozorlarda oflayn rejimda professional treyderlar tayyorlash sohasidagi biznesi.
+                             3. O'z investorlari uchun barqaror daromadga ega bo'lgan treyder-boshqaruvchi. 
+                             <br>
+                             <br>
+                             Umidjon kam ta’minlangan bolalarga ham homiylik qiladi. Muhtojlarga yordam berish g'oyasini tashkil qildi va
+                             ularning ta'lim olishi uchun pul ajratadi.
+                        </p>
+                        <p class="author-sig">- U. Razikov</p>
+                        <p class="author-copyright">
+                            U taniqli biznes murabbiy, tadbirkor, psixologiya fanlari doktori, "SAMO" nomli inson taraqqiyoti xalqaro markazi asoschisi va prezidenti S.M.Davlatovning eng yaxshi shogirdlaridan biri.
+                            <br>
+                            <span class="author-copyright-label">
+                                2021 yildan S.M.Davlatovning mafkurchisi va shogirdi.
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END AUTHOR SECTION -->
+
+        <!-- SECTION RESULT  -->
+
+        <div id="result" class="result">
+            <div class="container result-container">
+                <h1 class="result-title">Kursning etaplari</h1>
+                <div class="result-block">
+                    <div class="result-box">
+                        <p class="result-count">1</p>
+                        <p class="result-progress">Nazariya</p>
+                        <p class="result-description">Birinchi oy davomida siz savdo nazariyasini va ko'nikmalarini o'zlashtirasiz.</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-count">2</p>
+                        <p class="result-progress">Amaliyot</p>
+                        <p class="result-description">Ikkinchi oyda olingan nazariy bilimlarni amaliyotda qo'llaymiz.</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-count">3</p>
+                        <p class="result-progress">Investitsiya bilan savdo</p>
+                        <p class="result-description">Uchinchi oyda biz savdo qilish uchun investitsiya beradigan kompaniyani sinov muddatidan o'tamiz (savdo qilib).</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-count">4</p>
+                        <p class="result-progress">Daromadga chiqish</p>
+                        <p class="result-description">To'rtinchi oydan boshlab siz investitsiya bilan savdo qilish orqali daromadga chiqasiz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  END SECTION RESULT  -->
+
+
+        <!-- SECTION questions -->
+        <section id="questions" class="questions">
+            <div class="container questions-container">
+                <h1 class="questions-title">Ko'p beriladigan savollar</h1>
+                <div class="questions-block">
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">1</span>
+                            <span class="questions-accordion-title accordion-title">O'qishga oid savollar</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Чему обучают на курсе?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Принципы и правила двигателей рынка, то есть законы спроса и предложения. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Кто будет нас обучать?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Ответ Опытные кураторы, которые учились у Умиджона Разикова
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Даем ли мы гарантию на результат?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    К результату приводит упорный труд. Мы передаем знания, делимся практикой. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли результат работы куратора?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Да, без этого никак.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Почему Умиджон Разыков не проходит занятие?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Умиджон Разыков не может приходить на все занятия, но часто организует мастер классы, собрания и конференции. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько раз занятие в неделю?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    3 раза в неделю
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Дадут ли сертификат после окончания курса?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Нет, Вашим сертификатом будет торговый счёт, который Вы будете управлять и зарабатывать с него. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли сертификат у куратора?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Сертифицированный куратор не означает что профессионал в своём деле. Сертификат или диплом в наше время можно приобрести где угодно. Но результат не приобретается, а достигается. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Где обучался торговли Умиджон Разыков?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В одной группе один куратор. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько кураторов в группе?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В одной группе один куратор. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли индивидуальные занятия?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Пока что нет. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Когда будет торговля на реальном счёте?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Сразу после освоения теорий и практики. На последнем месяце обучения. 
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Есть ли онлайн курсы?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В процессе записи. Мы хотим чтобы онлайн курсы также были эффективными как и курсы в живую. Чтобы у обучающихся были все ответы на потенциально возникающие вопросы.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Когда будет онлайн курсы?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    В сентябре текущего года (2023).
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        На каком языке обучают?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    И на Узбекском, и на Русском. 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">2</span>
+                            <span class="questions-accordion-title accordion-title">Vaqt va natijaga oid savollar</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько длится обучение?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    3 месяца включающие в себя теорию, практику и реальную торговлю вместе с кураторами
+                                    и в команде.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Через какой период будет результат?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    К концу обучения у Вас уже будут результаты при условии что Вы будете стараться и
+                                    заниматься усердно.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Трехмесячный курс по результативности также, как и годовой?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Да, абсолютно такой же. Разница между трёх месячной и годовой в том, что в годовом
+                                    курсе помимо рынка Forex, обучаются и рынок акций, криптовалют.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Будет ли результат через 3 месяца?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Обязательно будет если упорно трудиться и учиться. Ведь если достаточно приложить
+                                    усилия, то и в космос можно улететь ;) что-ж в трейдинге не преуспеть?
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Почему нету 1 месячного курса?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Потому что мы не только обучаем, но и сопровождаем с практикой и реальной торговлей.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">3</span>
+                            <span class="questions-accordion-title accordion-title">To'lovga oid savollar</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Сколько стоит курс?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Стоимость обучения за весь период составляет - 2000$
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Почему так дорого?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Учитывая ценность, полезность и эффективность информации, и окупаемость полученных
+                                    знаний, и потенциал заработков, поверьте нам, это совсем не дорого.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли оплачивать курс помесячно (в рассрочку)?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Да можно. Можно оплачивать каждый месяц ⅓ части стоимости обучения (по 500$
+                                    ежемесячно).
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли оплатить курс после обучения?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    К сожалению из-за горьких опытов (из-за отношений учеников к нам и к знаниям
+                                    которыми мы с ними поделились), нельзя.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли обучиться бесплатно?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Набор учеников на бесплатное (т.е. оплата обучения от прибыли после курса) обучение
+                                    уже закончился. Набралось больше учеников чем планировали (больше 300).
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="questions-item accordion-item" onclick="toggleAccordion(this)">
+                        <div class="questions-item-header">
+                            <span class="questions-count accordion-count">4</span>
+                            <span class="questions-accordion-title accordion-title">Qolgan boshqa savollar</span>
+                        </div>
+                        <ul class="questions-content accordion-content">
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Минимальный депозит для торговли?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Мы рекомендуем не торговать на свои деньги. Начните с демо счёта. Когда вы будете
+                                    уверены в своих навыках, Вы можете за 100-500$ вязть в управление инвестиции от
+                                    10.000$ до 100.000$
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Можно ли после курса работать у вас куратором?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Если после курсов Вы захотите делиться с Вашим опытом с последующими учениками, мы
+                                    будет только рады принять Вас в нашу семью!
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Интересно но сомневаюсь?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    Вам нужно определиться в чем именно заключается Ваше сомнение. Если Вы не уверены
+                                    что справитесь, или что это не Ваше, вступать в сферу трейдинга или нет, решать
+                                    только Вам.
+                                </p>
+                            </li>
+                            <li class="questions-content-item">
+                                <p class="questions-num">
+                                    <i class="questions-icon fa-solid fa-circle-question fa-lg"></i>
+                                    <span class="questions-label">
+                                        Принимаете ли вы инвестиции?
+                                    </span>
+                                </p>
+                                <p class="questions-text">
+                                    По вопросам инвестиций Вам нужно записаться на прием к нашему руководящему трейдеру,
+                                    основателю школы “SharkTrading” Умиджону разыкову.
+                                    Как можно связатся с Умиджоном Разыковым?
+                                    Через запись по номеру телефону +998781132603
+                                    В каких городах есть филиалы?
+                                    Школы “SharkTrading” обучают трейдингу в трёх городах - в Ташкент, в Самарканде и в
+                                    Бухаре.
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END QUESTIONS -->
+
+        <!-- SECTION CALLBACK -->
+
+        <section class="callback">
+            <div class="container callback-container">
+                <h1 class="callback-title">Narx va to'lov usullari</h1>
+                <div class="callback-block">
+                    <div class="callback-left">
+                        <div class="callback-option">
+                            <div class="callback-option-top">
+                                <div class="callback-option-titels">
+                                    <h2 class="callback-option-title">Forex bozorida savdo qilish. <br> 3 oylik kurs.
+                                    </h2>
+                                </div>
+                            </div>
+                            <ul class="callback-list">
+                                <li class="callback-list-item">
+                                    Barcha to'lov usullari
+                                </li>
+
+                            </ul>
+                            <p class="callback-current">
+                                <span class="callback-current-price">2000$ - to'liq kurs narxi</span>
+                                <span class="callback-price-per-month">
+                                    yoki 2, 6 va 12 oyga bo'lib to'lash. 
+                                </span>
+                            </p>
+
+                            <div class="callback-btn-group">
+                                <a href="https://t.me/sharktradingchat" class="callback-btn callback-telegram">
+                                    <span>Telegramdan yozish</span>
+                                    <i class="fa-brands fa-telegram fa-2xl telegram-icon"></i>
+                                </a>
+                                <a href="tel:+998781132603" class="callback-btn callback-call">
+                                    <span>Qo'ng'iroq qilish</span>
+                                    <i class="fa-solid fa-phone fa-xl phone-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="callback-right">
+                        <form id="form" class="callback-form">
+                            <div id="success" class="callback-alert alert alert-success" role="alert">Arizangiz jo'natildi
+                            </div>
+                            <h1 class="callback-form-title">Bog'lanishimiz uchun quyidagilarni to'ldiring</h1>
+                            <input class="callback-input _req _name" name="name" placeholder="Ismingiz" type="text">
+                            <input class="callback-input _req _email " name="email" placeholder="Elektron pochtangiz" type="email">
+                            <input class="callback-input _req _tel" name="tel" placeholder="+998-" type="tel">
+                            <button type="submit" class="callback-form-btn btn">
+                                Ariza qoldirish
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END CALLBACK -->
+
+
+
+    </main>
+
+
+    <!-- END MAIN -->
+
+
+    <!-- SECTION FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="assets/image/logo.png" alt="shark trading">
+                </div>
+                <p class="footer-left-text">
+                    <span>Ofislarimiz: </span>
+                    <span>Toshkent sh. Furqat ko'chasi, 18 blok, 3 uy. Mo'ljal: Benkov kolleji. </span>
+                    <span>Samarqand sh. Rudakiy ko'chasi, 206. Mo'ljal: Bank kolleji.</span>
+                    <span>Buxoro sh. Fatxobod ko'chasi, 3a. Mo'ljal: Chevar</span>
+                </p>
+                <ul class="footer-social-list">
+                    <li class="footer-list-item">
+                        <a href="tel:+998781132603" class="footer-list-link">
+                            <i class="fa-solid fa-phone fa-xl phone-icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://instagram.com/sharktrading.uz" class="footer-list-link">
+                            <i class="fa-brands fa-instagram fa-2xl instagram-icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://t.me/sharktradingchat" class="footer-list-link">
+                            <i class="fa-brands fa-telegram fa-2xl telegram-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-first">
+                    <p>Menyu</p>
+                    <ul class="footer-right-list-first">
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Barcha kurslar</a></li>
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">Maktab yangiliklari</a></li>
+                        <li class="footer-right-item"><a href="" class="footer-right-list-link">O'quvchilar reytingi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right-end">
+                    <p>Mundarija</p>
+                    <ul class="footer-right-list-end">
+                        <li class="footer-right-item"><a href="#top" class="footer-right-list-link">Asosiy qism</a></li>
+                        <li class="footer-right-item"><a href="#auditorium" class="footer-right-list-link">Kurs kim uchun?</a>
+                        </li>
+                        <li class="footer-right-item"><a href="#learning" class="footer-right-list-link">Bizning ofislarimiz</a></li>
+                        <li class="footer-right-item"><a href="#training" class="footer-right-list-link">O'quv darslik rejasi</a>  </li>
+                        <li class="footer-right-item"><a href="#author" class="footer-right-list-link">Kurs muallifi</a></li> 
+                        <li class="footer-right-item"><a href="#author" class="footer-right-list-link">Maktab asoschisi</a></li>
+                        <li class="footer-right-item"><a href="#result" class="footer-right-list-link">Kursning etaplari</a></li>
+                        <li class="footer-right-item"><a href="#questions" class="footer-right-list-link">Ko'p beriladigan savollar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="js/main.js"> </script>
+
+
+
+</body>
+
+</html>

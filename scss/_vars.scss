@@ -1,0 +1,21 @@
+//Container & breakpoints
+@use 'sass:math';
+$containerWidth: 1240 + px;
+$containerPadding: 20;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1450: 1449.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 479.98 + px;
+$breakpoing1200: 1199.98 + px;
+$breakpoing325: 325 + px;
+
+
+
+//Colors 
+$primary: #ffffff;
+$secondary: #22212b;
+$neutral: #a9fa07;
+$sub:rgb(205, 205, 205);
+
+
